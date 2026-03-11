@@ -1,9 +1,5 @@
 pipeline {
-   agent 
-   label {'java'} 
-   tools {
-      maven 'Maven 3.8.7'
-   } 
+   agent {label 'java'}
    stages {
     stage('checkout') {
         steps {
